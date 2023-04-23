@@ -73,7 +73,7 @@
         </div>
       </section>
       <!-- About Section !! -->
-      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-yellow-600">
           <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
@@ -141,7 +141,7 @@
         </div>
       </section>
       <!-- Logo Section !! -->
-      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-white py-10 sm:py-10 bg-no-repeat bg-center">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <h2
@@ -221,7 +221,7 @@
         </div>
       </section>
       <!-- Services Section -->
-      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-gray-200">
           <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-20"
@@ -232,7 +232,10 @@
               <h1
                 class="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto"
               >
-                <span class="relative inline-block" :class="locale === 'ar' ? 'hidden ' : ''">
+                <span
+                  class="relative inline-block"
+                  :class="locale === 'ar' ? 'hidden ' : ''"
+                >
                   <svg
                     viewBox="0 0 52 24"
                     fill="text-white"
@@ -350,7 +353,7 @@
         </div>
       </section>
       <!-- Team Section -->
-      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <section
           class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8 shadow-lg"
         >
@@ -501,10 +504,11 @@
                   {{ $t("Send_us_a_Message") }}
                 </h3>
                 <form
+                  @submit="submitForm($event)"
                   name="contact"
                   method="POST"
                   data-netlify="true"
-                  data-netlify-honeypot="bot-field"
+                  netlify-honeypot="bot-field"
                 >
                   <input type="hidden" name="form-name" value="contact" />
                   <div class="mb-6">
@@ -642,4 +646,11 @@ const head = useLocaleHead({
 const title = computed(() =>
   t("title", { title: t(route.meta.title ?? "title") })
 );
+const submitForm = async (e) => {
+  const isFormCorrect = await v$.value.$validate();
+  if (!isFormCorrect) {
+    e.preventDefault();
+  }
+  return;
+};
 </script>
