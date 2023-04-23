@@ -1,6 +1,6 @@
 <template>
-  <!-- <Header /> -->
-  <div class="overflow-x-hidden w-full sm:w-auto"> 
+  <Header />
+  <div>
     <main>
       <!-- Hero Section !! -->
       <section>
@@ -73,7 +73,7 @@
         </div>
       </section>
       <!-- About Section !! -->
-      <section class="text-right">
+      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-yellow-600">
           <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
@@ -141,7 +141,7 @@
         </div>
       </section>
       <!-- Logo Section !! -->
-      <section class="text-right">
+      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-white py-10 sm:py-10 bg-no-repeat bg-center">
           <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <h2
@@ -221,7 +221,7 @@
         </div>
       </section>
       <!-- Services Section -->
-      <section class="text-right">
+      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-gray-200">
           <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-20"
@@ -350,7 +350,7 @@
         </div>
       </section>
       <!-- Team Section -->
-      <section class="text-right">
+      <section  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <section
           class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8 shadow-lg"
         >
@@ -381,7 +381,10 @@
         </section>
       </section>
       <!-- contact -->
-      <section class="relative py-20 md:py-[120px]" :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section
+        class="relative py-20 md:py-[120px]"
+        :dir="locale === 'en' ? 'ltr ' : 'rtl'"
+      >
         <div
           class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-gray-200 lg:h-[45%] xl:h-1/2"
         ></div>
@@ -497,7 +500,12 @@
                 >
                   {{ $t("Send_us_a_Message") }}
                 </h3>
-                <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                <form
+                  name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                >
                   <input type="hidden" name="form-name" value="contact" />
                   <div class="mb-6">
                     <label for="fullName" class="block text-xs text-dark"
