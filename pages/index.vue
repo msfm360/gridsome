@@ -503,19 +503,8 @@
                 >
                   {{ $t("Send_us_a_Message") }}
                 </h3>
-                <form
-                  @submit="submitForm($event)"
-                  name="contact"
-                  method="POST"
-                  data-netlify="true"
-                  netlify-honeypot="bot-field"
-                >
-                  <input value="contact" name="form-name" type="hidden" />
-                  <p hidden>
-                    <label
-                      >Don’t fill this out: <input name="bot-field"
-                    /></label>
-                  </p>
+
+                <form action="https://fabform.io/f/JK7OSRf" method="post">
                   <div class="mb-6">
                     <label for="fullName" class="block text-xs text-dark"
                       >{{ $t("Full_Name") }}*
