@@ -66,7 +66,7 @@ useHead({
     </template>
   </Head>
   <header
-    class=" fixed top-0 left-0 right-0 z-50 bg-white bg-transparent w-full h-full"
+    class=" fixed top-0 left-0 right-0 z-50 bg-white bg-transparent"
     :class="className"
   >
     <nav class="relative px-2 py-2">
