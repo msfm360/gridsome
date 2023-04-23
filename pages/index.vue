@@ -26,7 +26,7 @@
           </div>
 
           <div
-            class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl text-right"
+            class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl"
           >
             <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <h1
