@@ -1,6 +1,6 @@
 <template>
-  <Header />
-  <div>
+  <!-- <Header /> -->
+  <div class="overflow-x-hidden w-full sm:w-auto"> 
     <main>
       <!-- Hero Section !! -->
       <section>

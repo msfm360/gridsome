@@ -66,10 +66,10 @@ useHead({
     </template>
   </Head>
   <header
-    class="h-16 fixed top-0 left-0 right-0 z-50 bg-white bg-transparent"
+    class=" fixed top-0 left-0 right-0 z-50 bg-white bg-transparent"
     :class="className"
   >
-    <nav class="relative px-2 py-4">
+    <nav class="relative px-2 py-2">
       <div class="container mx-auto flex justify-between items-center">
         <NuxtLink to="/" aria-label="to home page">
           <img
