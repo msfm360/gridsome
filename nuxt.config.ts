@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         code: "ar",
         iso: "ar-sa", // ISO 639-1 code
         name: "العربية",
-        file: "ar-SA.json",
+        file: "ar.json",
         rtl: true,
         dir: "rtl",
         isCatchallLocale: true,
