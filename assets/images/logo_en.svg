@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="640" height="480" viewBox="0 0 640 480" xml:space="preserve">
+<desc>Created with Fabric.js 3.6.6</desc>
+<defs>
+</defs>
+<g transform="matrix(1.66 0 0 1.66 376.11 209.7)" style="" id="Layer_1"  >
+		<text xml:space="preserve" font-family="'MyriadPro-Regular'" font-size="32.5895" font-style="normal" font-weight="normal" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(197,148,59); fill-rule: nonzero; opacity: 1; white-space: pre;" ><tspan x="-64.26" y="10.24" >Estehdath</tspan></text>
+</g>
+<g transform="matrix(1 0 0 1 226.33 185.41)" id="Layer_1"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(70,102,176); fill-rule: nonzero; opacity: 1;"  transform=" translate(-291.33, -303.4)" d="M 328.96 322.09 L 328.96 322.09 H 253.7 v -23.32 l 0 0 v -3.17 c 0 -6.01 4.71 -10.88 10.71 -10.88 h 35.84 c 5.37 0 9.83 3.89 10.71 9.01 h -48.41 v 19.21 h 57.25 C 324.86 312.95 328.96 317.04 328.96 322.09 z" stroke-linecap="round" />
+</g>
+<g transform="matrix(1 0 0 1 224.77 185.34)" id="Layer_1"  >
+<rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(197,148,59); fill-rule: nonzero; opacity: 1;"  x="-21.41" y="-4.575" rx="0" ry="0" width="42.82" height="9.15" />
+</g>
+<g transform="matrix(1 0 0 1 226.33 227.81)" id="Layer_1"  >
+<path style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: rgb(197,148,59); fill-rule: nonzero; opacity: 1;"  transform=" translate(-291.33, -345.81)" d="M 328.96 327.12 L 328.96 327.12 c 0 5.05 -4.09 9.15 -9.15 9.15 h -57.25 v 5.04 h 48.62 v 8.36 h -0.04 v 3.95 c 0 6.01 -4.87 10.88 -10.88 10.88 h -35.84 c -5.37 0 -9.83 -3.89 -10.71 -9.01 h 48.33 v -5.03 H 253.7 v -23.33 H 328.96 z" stroke-linecap="round" />
+</g>
+</svg>
