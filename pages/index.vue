@@ -3,7 +3,7 @@
   <div>
     <main>
       <!-- Hero Section !! -->
-      <section>
+      <section :dir="locale === 'en' ? 'ltr ' : ''">
         <div
           class="relative flex flex-col-reverse py-16 lg:pt-0 lg:flex-col lg:pb-0 mt-20"
         >
