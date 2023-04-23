@@ -135,13 +135,13 @@ useHead({
         </li>
 
         <!-- Mobile menu icon -->
-        <button id="mobile-icon" class="md:hidden overflow-hidden" @click="openCloseMenu">
+        <button id="mobile-icon" class="md:hidden " @click="openCloseMenu">
           <i :class="['fa-solid', hamburgerIcon]"></i>
         </button>
       </div>
 
       <!-- Mobile menu -->
-      <div class="md:hidden flex justify-center mt-3 w-full z-50 h-full">
+      <div class="md:hidden flex justify-center mt-3 w-full z-50 h-full overflow-hidden">
         <div
           id="mobile-menu"
           :class="[mobileMenuClass]"
