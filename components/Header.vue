@@ -19,15 +19,15 @@ export default {
     },
   },
   props: {
-  className: {
-    type: String,
-    default: '',
+    className: {
+      type: String,
+      default: "",
+    },
   },
-},
 };
 </script>
 <script setup>
-import { link } from 'fs';
+import { link } from "fs";
 
 const switchLocalePath = useSwitchLocalePath();
 const route = useRoute();
@@ -49,7 +49,6 @@ useHead({
     lang: availableLocales.value[0].iso,
   },
 });
-
 </script>
 <template>
   <Head>
@@ -66,7 +65,10 @@ useHead({
       <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
     </template>
   </Head>
-  <header class="h-16 fixed top-0 left-0 right-0 z-50 bg-white bg-transparent" :class="className">
+  <header
+    class="h-16 fixed top-0 left-0 right-0 z-50 bg-white bg-transparent"
+    :class="className"
+  >
     <nav class="relative px-2 py-4">
       <div class="container mx-auto flex justify-between items-center">
         <NuxtLink to="/" aria-label="to home page">
@@ -84,13 +86,17 @@ useHead({
             <NuxtLink :to="localePath('/')">{{ $t("home") }} </NuxtLink>
           </li>
           <li class="">
-            <NuxtLink :to="localePath('/services')"> {{ $t("services") }}</NuxtLink>
+            <NuxtLink :to="localePath('/services')">
+              {{ $t("services") }}</NuxtLink
+            >
           </li>
           <li>
             <NuxtLink :to="localePath('/about')">{{ $t("about") }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="localePath('/contact')">{{ $t("contact") }}</NuxtLink>
+            <NuxtLink :to="localePath('/contact')">{{
+              $t("contact")
+            }}</NuxtLink>
           </li>
         </ul>
 
@@ -143,24 +149,32 @@ useHead({
         >
           <ul class="bg-gray-100 shadow-lg leading-9 font-bold h-screen">
             <li
-              class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+              class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
               <NuxtLink to="/" class="block pl-7">{{ $t("home") }}</NuxtLink>
             </li>
             <li
-              class="border-b-2 border-white hover:bg-red-400 hover:text-white pl-4"
+              class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
               <NuxtLink to="/services" class="block pl-7">{{
                 $t("services")
               }}</NuxtLink>
             </li>
-            <NuxtLink to="/about" class="block pl-11"
-              >{{ $t("about") }}
-            </NuxtLink>
+            <li
+              class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
+            >
+              <NuxtLink to="/about" class="block pl-11"
+                >{{ $t("about") }}
+              </NuxtLink>
+            </li>
 
-            <NuxtLink to="/contact" class="block pl-11"
-              >{{ $t("contact") }}
-            </NuxtLink>
+            <li
+              class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
+            >
+              <NuxtLink to="/contact" class="block pl-11"
+                >{{ $t("contact") }}
+              </NuxtLink>
+            </li>
             <!-- Submenu starts -->
             <ul class="bg-white text-gray-800 w-full">
               <NuxtLink
