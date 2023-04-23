@@ -510,7 +510,12 @@
                   data-netlify="true"
                   netlify-honeypot="bot-field"
                 >
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input value="contact" name="form-name" type="hidden" />
+                  <p hidden>
+                    <label
+                      >Don’t fill this out: <input name="bot-field"
+                    /></label>
+                  </p>
                   <div class="mb-6">
                     <label for="fullName" class="block text-xs text-dark"
                       >{{ $t("Full_Name") }}*
