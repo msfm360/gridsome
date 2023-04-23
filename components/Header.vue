@@ -151,29 +151,28 @@ useHead({
             <li
               class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
-              <NuxtLink to="/" class="block pl-7">{{ $t("home") }}</NuxtLink>
+              <NuxtLink :to="localePath('/')" class="block pl-7">{{ $t("home") }}</NuxtLink>
             </li>
             <li
               class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
-              <NuxtLink to="/services" class="block pl-7">{{
+              <NuxtLink :to="localePath('/services')" class="block pl-7">{{
                 $t("services")
               }}</NuxtLink>
             </li>
             <li
               class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
-              <NuxtLink to="/about" class="block pl-11"
-                >{{ $t("about") }}
-              </NuxtLink>
+              <NuxtLink  :to="localePath('/services')" class="block pl-7">{{
+                $t("contact")
+              }}</NuxtLink>
             </li>
-
             <li
               class="border-b-2 border-white hover:bg-[#C5943B] hover:text-white pl-4"
             >
-              <NuxtLink to="/contact" class="block pl-11"
-                >{{ $t("contact") }}
-              </NuxtLink>
+              <NuxtLink :to="localePath('/about')" class="block pl-7">{{
+                $t("about")
+              }}</NuxtLink>
             </li>
             <!-- Submenu starts -->
             <ul class="bg-white text-gray-800 w-full">
