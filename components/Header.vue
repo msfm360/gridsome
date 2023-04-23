@@ -135,7 +135,7 @@ useHead({
         </li>
 
         <!-- Mobile menu icon -->
-        <button id="mobile-icon" class="md:hidden" @click="openCloseMenu">
+        <button id="mobile-icon" class="md:hidden overflow-hidden" @click="openCloseMenu">
           <i :class="['fa-solid', hamburgerIcon]"></i>
         </button>
       </div>
