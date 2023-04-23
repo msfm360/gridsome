@@ -141,7 +141,7 @@ useHead({
       </div>
 
       <!-- Mobile menu -->
-      <div class="md:hidden flex justify-center mt-3 w-full z-50">
+      <div class="md:hidden flex justify-center mt-3 w-full z-50 h-full">
         <div
           id="mobile-menu"
           :class="[mobileMenuClass]"
