@@ -30,22 +30,19 @@
           >
             <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <h1
-                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1"
+                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1 "
+                :class="locale === 'ar' ? 'text-right ' : ''"
               >
                 {{ $t("slogan") }}
                 <!-- v-motion-roll-left :delay="500" -->
-                <div class="inline-block">
-                  <span class="text-[#FFA602]">
-                    {{ $t("word_coating") }}
-                  </span>
-                </div>
-                {{ $t("word_and") }}
+                <span class="text-[#FFA602]">
+                  {{ $t("word_coating") }}
+                </span>
+                <span> {{ $t("word_and") }} </span>
                 <!-- v-motion-roll-left :delay="500" -->
-                <div class="inline-block">
-                  <span class="text-[#FFA602]">
-                    {{ $t("word_insulation") }}
-                  </span>
-                </div>
+                <span class="text-[#FFA602]">
+                  {{ $t("word_insulation") }}
+                </span>
                 {{ $t("word_needs") }}
               </h1>
               <h2
