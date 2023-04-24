@@ -19,18 +19,19 @@
               <path d="M50 0H100L50 100H0L50 0Z "></path>
             </svg>
             <img
-              class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
+              class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full "
               src="../assets/images/backgroundMain.webp"
               alt="background image for main page"
+              
             />
           </div>
 
           <div
-            class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl"
+            class="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl animate__animated animate__slideInUp"
           >
             <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <h1
-                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1 "
+                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1  "
                 :class="locale === 'ar' ? 'text-right ' : ''"
               >
                 {{ $t("slogan") }}
@@ -73,7 +74,7 @@
       <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-yellow-600">
           <div
-            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 "
           >
             <div>
               <i

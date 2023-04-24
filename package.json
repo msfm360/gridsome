@@ -22,6 +22,7 @@
     "@headlessui/vue": "^1.7.13",
     "@heroicons/vue": "^2.0.17",
     "@vueuse/motion": "^2.0.0-beta.27",
+    "animate.css": "^4.1.1",
     "nuxt-headlessui": "^1.1.4"
   }
 }
