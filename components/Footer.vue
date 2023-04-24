@@ -1,9 +1,13 @@
+<script setup>
+const { locale} = useI18n();
+</script>
+
 <template>
-  <footer>
-    <hr class="shadow-lg" />
+  <footer  :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+    <hr class="shadow-lg " />
     <div>
       <div
-        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8"
+        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 "
       >
         <div class="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4">
           <section>
