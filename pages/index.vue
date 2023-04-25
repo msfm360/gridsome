@@ -19,10 +19,9 @@
               <path d="M50 0H100L50 100H0L50 0Z "></path>
             </svg>
             <img
-              class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full "
+              class="object-cover w-full h-56 rounded shadow-lg lg:rounded-none lg:shadow-none md:h-96 lg:h-full"
               src="../assets/images/backgroundMain.webp"
               alt="background image for main page"
-              
             />
           </div>
 
@@ -31,7 +30,7 @@
           >
             <div class="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
               <h1
-                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1  "
+                class="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none transition duration-500 transform hover:-translate-y-1"
                 :class="locale === 'ar' ? 'text-right ' : ''"
               >
                 {{ $t("slogan") }}
@@ -74,7 +73,7 @@
       <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
         <div class="bg-yellow-600">
           <div
-            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 "
+            class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
           >
             <div>
               <i
@@ -219,7 +218,13 @@
         </div>
       </section>
       <!-- Services Section -->
-      <section :dir="locale === 'en' ? 'ltr ' : 'rtl'">
+      <section
+        :dir="locale === 'en' ? 'ltr ' : 'rtl'"
+        :class="{
+          animate__animated: shouldAnimate,
+          animate__fadeInUp: shouldAnimate,
+        }"
+      >
         <div class="bg-gray-200">
           <div
             class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 mt-20"
@@ -382,7 +387,7 @@
         </section>
       </section>
       <!-- contact -->
-      <section
+      <section data-aos="zoom-out-right" 
         class="relative py-20 md:py-[120px]"
         :dir="locale === 'en' ? 'ltr ' : 'rtl'"
       >
@@ -539,8 +544,8 @@
                       />
                     </label>
                   </div>
-                  <div class="mb-6">
-                    <label for="message" class="block text-xs text-dark"
+                  <div class="mb-6" >
+                    <label for="message" class="block text-xs text-dark" 
                       >{{ $t("Message") }}*
                       <textarea
                         name="message"
@@ -590,7 +595,25 @@ export default {
   data() {
     return {
       locale: this.$i18n.locale,
+      shouldAnimate: false,
     };
+  },
+  mounted() {
+    window.addEventListener("scroll", this.handleScroll);
+    console.log(window.addEventListener("scroll", this.handleScroll));
+  },
+  beforeDestroy() {
+    window.removeEventListener("scroll", this.handleScroll);
+  },
+  methods: {
+    handleScroll() {
+      const box = document.querySelector(".box");
+      const boxTop = box.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (boxTop < windowHeight - 100) {
+        this.shouldAnimate = true;
+      }
+    },
   },
 };
 </script>

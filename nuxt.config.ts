@@ -7,7 +7,7 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
+  plugins: [{ src: "@/plugins/aos", ssr: false, mode: "client" }],
   modules: ["@nuxt/image-edge", "@nuxtjs/i18n", "nuxt-simple-sitemap"],
   i18n: {
     // vueI18n: './i18n.config.ts' // if you are using custom path, default
@@ -42,7 +42,22 @@ export default defineNuxtConfig({
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "My Project" },
+        { hid: "description", name: "description", content: "Estehdath provides coating and insulation solutions for your home or business. From intumescent paint to water and thermal insulation, we have you covered with the latest technology and materials to ensure quality and durability" },
+        { hid: "og:title", property: "og:title", content: "Estehdath" },
+        { hid: "og:description", property: "og:description", content: "Estehdath provides coating and insulation solutions for your home or business. From intumescent paint to water and thermal insulation, we have you covered with the latest technology and materials to ensure quality and durability" },
+        { hid: "og:image", property: "og:image", content: "https://estehdath.com/og-image.png" },
+        { hid: "og:url", property: "og:url", content: "https://estehdath.com" },
+        { hid: "og:type", property: "og:type", content: "website" },
+        { hid: "og:site_name", property: "og:site_name", content: "Estehdath" },
+        { hid: "twitter:card", name: "twitter:card", content: "summary_large_image" },
+        { hid: "twitter:site", name: "twitter:site", content: "@estehdath117" },
+        { hid: "twitter:creator", name: "twitter:creator", content: "@estehdath117" },
+        { hid: "twitter:title", name: "twitter:title", content: "estehdath117" },
+        { hid: "twitter:description", name: "twitter:description", content: "Estehdath provides coating and insulation solutions for your home or business. From intumescent paint to water and thermal insulation, we have you covered with the latest technology and materials to ensure quality and durability" },
+        { hid: "twitter:image", name: "twitter:image", content: "https://estehdath.com/og-image.png" },
+        { hid: "twitter:image:alt", name: "twitter:image:alt", content: "Estehdath"}
+        
+
       ],
       link: [
         {
